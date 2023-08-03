@@ -11,7 +11,7 @@ npm install
 ```
 - to install the required modules
 ```bash
-npm run 
+npm start
 ```
 
 - In side the counter file to run the project
