@@ -3,7 +3,7 @@
 
 ## Commands
 ```bash
-git clone 
+git clone https://github.com/kaleabe-n/A2SV-projects.git
 ```
 - to clone the project
 ```bash
