@@ -1,0 +1,25 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.profile-image{
+  max-height: 200px;
+  border-radius: 50%;
+}
+.card{
+  width: 400px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin: auto;
+  box-shadow: 2px 2px 15px 3px rgb(141, 141, 141);
+}
+.App{
+  height: 1vw;
+  border: none;
+}
+.user-desc{
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
