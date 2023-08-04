@@ -1,9 +1,21 @@
-# run npm start and other commands from the profile folder not the root folder
-cd profile
-### `npm start`
+#### run npm start and other commands from the profile folder not the root folder
 
-Runs the app in the development mode.\
+```bash
+git clone
+```
+> to clone the repo
+```bash
+cd profile
+```
+> move into the profile project
+```bash
+npm install
+```
+> to install the required pachages
+```bash
+npm start
+```
+to run the project
+
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
