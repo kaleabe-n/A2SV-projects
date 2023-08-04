@@ -1,7 +1,7 @@
 #### run npm start and other commands from the profile folder not the root folder
 
 ```bash
-git clone
+git clone https://github.com/kaleabe-n/A2SV-projects.git
 ```
 > to clone the repo
 ```bash
