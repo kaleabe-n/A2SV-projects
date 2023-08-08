@@ -1,0 +1,7 @@
+.cardlist{
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    align-items: center;
+    margin: 30px;
+}
