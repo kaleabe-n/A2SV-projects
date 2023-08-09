@@ -1,0 +1,14 @@
+{
+  "name": "tailwind-practice",
+  "version": "1.0.0",
+  "description": "this is a project to practice tailwind css library",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "npx tailwindcss build -i ./src/style.css -o ./src/public/style.css"
+  },
+  "author": "Kaleabe",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
+}

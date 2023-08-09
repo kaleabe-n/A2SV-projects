@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipies</title>
+    <link rel="stylesheet" href="tailwind-all.css">
+</head>
+<body>
+    <header class="bg-gray-800 text-gray-200 h-40" id="header">
+        <nav class="flex flex-col sm:flex-row justify-between items-center h-full mx-2 sm:mx-12">
+            <div class="flex justify-between w-full items-center p-3">
+                <h1 class="font-mono text-4xl font-light">Restaurant</h1>
+                <div id="humburgur">
+                    <img src="img/icon2.png" alt="" class="sm:hidden w-8">
+                </div>
+            </div>
+            <ul class="flex flex-col sm:flex-row" id="nav">
+                <li class="mx-8"><a href="index.html">Home</a></li>
+                <li class="mx-8">About</li>
+                <li class="mx-8">contact</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2 class="font-sans text-3xl m-12 text-blue-800 sm:mx-32">Most popular foods</h2>
+            <div class="flex justify-center gap-11 flex-wrap m-12 items-start">
+                <a href="singleRecipie.html" class="w-3/4 sm:w-2/3 md:w-1/4 mx-3 sm:mx-12 my-8 rounded overflow-hidden bg-gray-200">
+                    <img src="img/img1.jpg" alt="">
+                    <div class="p-4">
+                        <h3 class="font-sans font-semibold">salad with tomato</h3>
+                        <p class="text-gray-600 font-thin">best plate served with sauce</p>
+                    </div>
+                </a>
+                <a href="singleRecipie.html" class="w-3/4 sm:w-2/3 md:w-1/4 mx-3 sm:mx-12 my-8 rounded overflow-hidden bg-gray-200">
+                    <img src="img/img2.jpg" alt="">
+                    <div class="p-4">
+                        <h3 class="font-sans font-semibold">salad with tomato</h3>
+                        <p class="text-gray-600 font-thin">best plate served with sauce</p>
+                    </div>
+                </a>
+                <a href="singleRecipie.html" class="w-3/4 sm:w-2/3 md:w-1/4 mx-3 sm:mx-12 my-8 rounded overflow-hidden bg-gray-200">
+                    <img src="img/img3.jpg" alt="">
+                    <div class="p-4">
+                        <h3 class="font-sans font-semibold">salad with tomato</h3>
+                        <p class="text-gray-600 font-thin">best plate served with sauce</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section>
+            <h2 class="font-sans text-3xl m-12 text-blue-800 sm:mx-32">Recent foods</h2>
+            <div class="flex justify-center gap-11 flex-wrap m-12 items-start">
+                <a href="singleRecipie.html" class="w-3/4 sm:w-2/3 md:w-1/4 mx-3 sm:mx-12 my-8 rounded overflow-hidden bg-gray-200">
+                    <img src="img/img1.jpg" alt="">
+                    <div class="p-4">
+                        <h3 class="font-sans font-semibold">salad with tomato</h3>
+                        <p class="text-gray-600 font-thin">best plate served with sauce</p>
+                    </div>
+                </a>
+                <a href="singleRecipie.html" class="w-3/4 sm:w-2/3 md:w-1/4 mx-3 sm:mx-12 my-8 rounded overflow-hidden bg-gray-200">
+                    <img src="img/img2.jpg" alt="">
+                    <div class="p-4">
+                        <h3 class="font-sans font-semibold">salad with tomato</h3>
+                        <p class="text-gray-600 font-thin">best plate served with sauce</p>
+                    </div>
+                </a>
+                <a href="singleRecipie.html" class="w-3/4 sm:w-2/3 md:w-1/4 mx-3 sm:mx-12 my-8 rounded overflow-hidden bg-gray-200">
+                    <img src="img/img3.jpg" alt="">
+                    <div class="p-4">
+                        <h3 class="font-sans font-semibold">salad with tomato</h3>
+                        <p class="text-gray-600 font-thin">best plate served with sauce</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <footer class="h-64 bg-gray-900 flex justify-center p-16 flex-col items-center">
+        <p class="text-gray-300 uppercase m-4">contact us</p>
+        <p class="text-gray-300 m-0.5">phone:090909009</p>
+        <p class="text-gray-300 m-0.5">email:Restaurant@email.com</p>
+        <p class="text-gray-300 m-0.5">location addis abeba 4 kilo</p>
+    </footer>
+    <script>
+        let button = document.getElementById('humburgur')
+        let nav = document.getElementById('nav')
+        let header = document.getElementById('header')
+        button.onclick = (e)=>{
+            e.preventDefault()
+            if(nav.className.includes('hidden')){
+                nav.className = "flex flex-col sm:flex-row"
+                header.className = "bg-gray-800 text-gray-200 h-40"
+            }else{
+                nav.className = "flex flex-col sm:flex-row hidden"
+                header.className = "bg-gray-800 text-gray-200 h-20"
+            }
+        }
+    </script>
+</body>
+</html>
