@@ -44,15 +44,15 @@ const SingleTodo = ({todo,deleteTodoHandler,updateTodoHandler,changeDoneState}) 
                 })
             }} className="border border-gray-400 bg-white h-10 w-64"/></form>}
         <div>
-            <button className="bg-red-700 rounded p-2 mr-2" 
-            onClick={
-                (e)=>{
-                    e.preventDefault()
-                    deleteTodoHandler(todo.id)
-                }
-            }>delete</button>
             <button className="bg-blue-400 rounded p-2 mr-2" onClick={editButtonHandler}>update</button>
-            <button className="bg-blue-400 rounded p-2" onClick={changeStateHandler}>{todo.done?"undone":"done"}</button>
+            <button className="bg-blue-400 rounded p-2 mr-2" onClick={changeStateHandler}>{todo.done?"undone":"done"}</button>
+            <button className="bg-red-700 rounded p-2" 
+                onClick={
+                    (e)=>{
+                        e.preventDefault()
+                        deleteTodoHandler(todo.id)
+                    }
+                }>delete</button>
         </div>  
     </div> );
 }

@@ -7,12 +7,12 @@ const TodoList = ({todos,deleteTodoHandler,updateTodoHandler,changeDoneState}) =
     //pass the props to each todo
     return ( <div className="flex flex-col items-center">
         {/* incomplete tasks */}
-        {incomplete.length>0 && <h2 className="text-blue-500 font-sans text-3xl font-semibold">Incomplete</h2>}
+        {incomplete.length>0 && <h2 className="text-blue-800 font-sans text-3xl font-semibold">Incomplete</h2>}
         {incomplete.map((todo)=>{
             return (<SingleTodo key={todo.id} todo={todo} deleteTodoHandler={deleteTodoHandler} updateTodoHandler={updateTodoHandler} changeDoneState={changeDoneState}/>)
         })}
         {/* complete tasks */}
-        {complete.length>0 && <h2 className="text-blue-500 font-sans text-3xl font-semibold">Complete</h2>}
+        {complete.length>0 && <h2 className="text-blue-800 font-sans text-3xl font-semibold">Completed</h2>}
         {complete.map((todo)=>{
             return (<SingleTodo key={todo.id} todo={todo} deleteTodoHandler={deleteTodoHandler} updateTodoHandler={updateTodoHandler} changeDoneState={changeDoneState}/>)
         })}
