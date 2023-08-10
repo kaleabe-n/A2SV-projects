@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="tailwind-all.css">
 </head>
 <body>
-    <header class="bg-gray-800 text-gray-200 h-40" id="header">
+    <header class="bg-gray-800 text-gray-200 h-20 md:h-40" id="header">
         <nav class="flex flex-col sm:flex-row justify-between items-center h-full mx-2 sm:mx-12">
             <div class="flex justify-between w-full items-center p-3">
                 <h1 class="font-mono text-4xl font-light">Restaurant</h1>
@@ -15,7 +15,7 @@
                     <img src="img/icon2.png" alt="" class="sm:hidden w-8">
                 </div>
             </div>
-            <ul class="flex flex-col sm:flex-row" id="nav">
+            <ul class="sm:flex flex-col sm:flex-row hidden" id="nav">
                 <li class="mx-8"><a href="index.html">Home</a></li>
                 <li class="mx-8"><a href="#">About</a></li>
                 <li class="mx-8"><a href="#">Contact</a></li>
@@ -93,8 +93,8 @@
                 nav.className = "flex flex-col sm:flex-row"
                 header.className = "bg-gray-800 text-gray-200 h-40"
             }else{
-                nav.className = "flex flex-col sm:flex-row hidden"
-                header.className = "bg-gray-800 text-gray-200 h-20"
+                nav.className = "sm:flex flex-col sm:flex-row hidden"
+                header.className = "bg-gray-800 text-gray-200 h-20 sm:h-40"
             }
         }
     </script>
