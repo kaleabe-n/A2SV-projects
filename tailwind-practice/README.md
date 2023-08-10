@@ -6,4 +6,4 @@
 git clone https://github.com/kaleabe-n/A2SV-projects.git
 ```
 - To clone the repository
-> after clonning the repository go to the tailwind practice folder > src > index.html
+> after clonning the repository go to the tailwind practice folder > public > index.html
