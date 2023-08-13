@@ -27,7 +27,7 @@ const SingleNote = ({note}) => {
     
     return ( <div className="w-1/2 my-2 border-gray-400 border p-2 bg-orange-100 rounded-lg" key={note.id}>
         {/* show the note or input based on isEditing */}
-        {!isEditing && <p className="ml-4 mb-4">{currNote}</p>}
+        {!isEditing && <pre className="ml-4 mb-4">{currNote}</pre>}
         {isEditing && <form onSubmit={updateHandler} className="items-start">
                 <textarea cols={60} rows={3} value={currNote} onChange={(e)=>{
                     e.preventDefault()
