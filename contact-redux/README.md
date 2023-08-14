@@ -5,7 +5,7 @@ git clone https://github.com/kaleabe-n/A2SV-projects.git
 ```
 - To clone the repo
 ```bash
-cd contact
+cd contact-redux
 ```
 - Move to the project folder
 ```bash
