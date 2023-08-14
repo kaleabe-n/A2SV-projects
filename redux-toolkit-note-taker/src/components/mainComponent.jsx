@@ -1,6 +1,6 @@
 import NoteList from "./noteList";
 import Header from './header'
-import AddNote from "./addTodo";
+import AddNote from "./addNote";
 
 const MainComponent = () => {
     //the main component that desplays every thing
