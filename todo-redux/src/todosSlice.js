@@ -4,7 +4,8 @@ import { createSlice } from '@reduxjs/toolkit'
 export const todoSlice = createSlice({
   name: 'todos',
   initialState: {
-    value: []
+    value: [],
+    viewState : 'all'
   },
   reducers: {
     //add todo reducer
@@ -45,10 +46,14 @@ export const todoSlice = createSlice({
         //change the state of the element
         state.value[index].done = !state.value[index].done
     },
+    changeState:(state,action) => {
+      state.viewState = action.payload
+      console.log(action.payload,state.viewState)
+    }
   }
 })
 
 // Action creators are generated for each case reducer function
-export const { addTodo,removeTodo,updateTodo,toggleDone } = todoSlice.actions
+export const { addTodo,removeTodo,updateTodo,toggleDone,changeState } = todoSlice.actions
 
 export default todoSlice.reducer
