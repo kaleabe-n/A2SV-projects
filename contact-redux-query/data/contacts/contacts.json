@@ -1,0 +1,28 @@
+{
+  "contacts": [
+    {
+      "id": 1,
+      "name": "kaleabe negussie",
+      "phone": "0900999090",
+      "description": "this is the contact of kaleabe negussie"
+    },
+    {
+      "id": 2,
+      "name": "second person updated",
+      "phone": "0900999090",
+      "description": "this is the contact of someone(second person) updated"
+    },
+    {
+      "name": "third contact",
+      "description": "third contact description",
+      "phone": "0900999090",
+      "id": 1692101101503
+    },
+    {
+      "name": "kaleabe",
+      "description": "a2sv g4",
+      "phone": "0934999999",
+      "id": 1692103278786
+    }
+  ]
+}
