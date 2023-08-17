@@ -1,4 +1,7 @@
 # React redux todo app testing
+> link to test document
+https://docs.google.com/document/d/1KWHd6fM1Nyz33DVcF9YRdBqN7CAa-TjvO785sAUgMWg/edit
+
 ## How to Start
 ```bash
 git clone https://github.com/kaleabe-n/A2SV-projects.git
