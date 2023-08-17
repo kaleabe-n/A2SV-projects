@@ -16,7 +16,6 @@ const ContactPage = () => {
 
     //function that handles delete which dispatches deletecontact and refreshes the contacts
     const handleDelete = (contact)=>{
-        // console.log(id)
         deletecontact(contact)
     }
     

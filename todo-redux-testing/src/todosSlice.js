@@ -48,6 +48,7 @@ export const todoSlice = createSlice({
     },
     changeState:(state,action) => {
       state.viewState = action.payload
+      //(action.payload,state.viewState)
     }
   }
 })

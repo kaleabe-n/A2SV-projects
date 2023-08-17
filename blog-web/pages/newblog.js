@@ -34,7 +34,6 @@ const NewBlog = () => {
             },
             body: JSON.stringify(submission)
         }).catch((e)=>{
-            console.log(e)
             hasError = true
             setError('failed to create post')
         })

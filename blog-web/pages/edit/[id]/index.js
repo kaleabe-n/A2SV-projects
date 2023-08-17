@@ -35,7 +35,6 @@ const EditBlog = ({blog}) => {
             },
             body: JSON.stringify(submission)
         }).catch((e)=>{
-            console.log(e)
             hasError = true
             setError('failed to update post')
         })

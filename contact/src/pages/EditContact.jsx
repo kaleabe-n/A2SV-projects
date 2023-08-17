@@ -24,7 +24,6 @@ export const editContactAction = async ({request,params})=>{
     const data = await request.formData()
     const submission = {name:data.get('name'),description:data.get('description')}
     const path = 'http://localhost:4000/contacts/' + id.toString()
-    console.log(path)
     const response = await fetch(path,{
         method:"PATCH",
         headers: {
@@ -32,7 +31,6 @@ export const editContactAction = async ({request,params})=>{
         },
         body: JSON.stringify({...submission,id:id})
     })
-    console.log(response)
     if(response.ok){
         return redirect('/contacts')
     }

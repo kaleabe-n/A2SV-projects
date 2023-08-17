@@ -10,6 +10,7 @@ const TodoList = ({todos,deleteTodoHandler,updateTodoHandler,changeDoneState}) =
     //filter state
     const dispatch = useDispatch()
     const viewState = useSelector(state=>state.todos.viewState)
+    //(viewState,"viewState")
 
     //handle filter function to handle change in the drop down
     const handleFilter = (e)=>{
@@ -22,11 +23,11 @@ const TodoList = ({todos,deleteTodoHandler,updateTodoHandler,changeDoneState}) =
         content = 
             <div className="flex flex-col items-center w-full">
                 {/* all tasks */}
-                {complete.length>0 && <h2 className="text-blue-800 font-sans text-3xl font-semibold">Complete</h2>}
+                {complete.length>0 && <h2 className="text-blue-800 font-sans text-3xl font-semibold" data-test="complete-header">Complete</h2>}
                 {complete.map((todo)=>{
                     return (<SingleTodo key={todo.id} todo={todo} deleteTodoHandler={deleteTodoHandler} updateTodoHandler={updateTodoHandler} changeDoneState={changeDoneState}/>)
                 })}
-                {incomplete.length>0 && <h2 className="text-blue-800 font-sans text-3xl font-semibold">Incomplete</h2>}
+                {incomplete.length>0 && <h2 className="text-blue-800 font-sans text-3xl font-semibold" data-test="incomplete-header">Incomplete</h2>}
                 {incomplete.map((todo)=>{
                     return (<SingleTodo key={todo.id} todo={todo} deleteTodoHandler={deleteTodoHandler} updateTodoHandler={updateTodoHandler} changeDoneState={changeDoneState}/>)
                 })}
@@ -35,7 +36,7 @@ const TodoList = ({todos,deleteTodoHandler,updateTodoHandler,changeDoneState}) =
         content = 
             <div className="flex flex-col items-center w-full">
                 {/* complete */}
-                {complete.length>0 && <h2 className="text-blue-800 font-sans text-3xl font-semibold">Complete</h2>}
+                {complete.length>0 && <h2 className="text-blue-800 font-sans text-3xl font-semibold" data-test="complete-header">Complete</h2>}
                 {complete.map((todo)=>{
                     return (<SingleTodo key={todo.id} todo={todo} deleteTodoHandler={deleteTodoHandler} updateTodoHandler={updateTodoHandler} changeDoneState={changeDoneState}/>)
                 })}
@@ -44,13 +45,14 @@ const TodoList = ({todos,deleteTodoHandler,updateTodoHandler,changeDoneState}) =
         content = 
             <div className="flex flex-col items-center w-full">
                 {/* incomplete */}
-                {incomplete.length>0 && <h2 className="text-blue-800 font-sans text-3xl font-semibold">Incomplete</h2>}
+                {incomplete.length>0 && <h2 className="text-blue-800 font-sans text-3xl font-semibold" data-test="incomplete-header">Incomplete</h2>}
                 {incomplete.map((todo)=>{
                     return (<SingleTodo key={todo.id} todo={todo} deleteTodoHandler={deleteTodoHandler} updateTodoHandler={updateTodoHandler} changeDoneState={changeDoneState}/>)
                 })}
             </div>
     }
 
+    //(viewState)
     //pass the props to each todo
     return ( 
     <div className='flex flex-col items-center w-full'>

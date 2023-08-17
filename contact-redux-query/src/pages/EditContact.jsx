@@ -35,7 +35,6 @@ const EditContact = () => {
     //handle updata button
     const updateHandler=(e)=>{
         e.preventDefault()
-        console.log(name,description)
         updateContact({name,description,id,phone}).then(()=>{
             navigate('/contacts')
         })

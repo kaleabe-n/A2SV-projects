@@ -19,7 +19,6 @@ const AddContact = () => {
     //function to handle submit button
     const submitHandler= async (e)=>{
         e.preventDefault()
-        console.log(name,description)
         addContact({name:name,description:description,phone:phone,id:Date.now()}).then(()=>{
             navigator('/contacts')
         })

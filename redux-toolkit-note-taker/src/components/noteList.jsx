@@ -4,7 +4,6 @@ import { useSelector } from "react-redux"
 const NoteList = () => {
     //selector to access the value of the notes
     const selector = useSelector(state=>{
-        console.log(state.notes)
         return state.notes})
 
     // use the selector above to access the values of the notes
